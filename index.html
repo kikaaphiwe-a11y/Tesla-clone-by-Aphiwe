@@ -3,76 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Electric Cars,Solar & Clean Energy</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-
+  <div>
     <header>
-        <img id="logo" src="./assets/tesla-logo-png.png" alt="logo">
+        <img id="logo" src="./assets/logo4.jpg" alt="logo">
 
-        <section class="header">
-            <a href="#">Vehicles</a>
-            <a href="#">Energy</a>
-            <a href="#">Charging</a>
-            <a href="#">Discover</a>
-            <a href="#">Shop</a>
+        <section id="header">
+            <div class="header-buttons">
+            <button>Vehicles</button>
+            <button>Energy</button>
+            <button>Charging</button>
+            <button>Discover</button>
+            <button>Shop</button>
+            </div>
+            
         </section>
-
+        
         <section>
-            <i class="fa-solid fa-circle-question help-icon"></i>
-            <i class="fa-solid fa-globe"></i>
-            <i class="fa-solid fa-user account-icon"></i>
+           <a><i class="fa-solid fa-circle-question help-icon"></i></a>
+           <a> <i class="fa-solid fa-globe outline-icon"></i></a>
+           <a><i class="fa-solid fa-user account-icon"></i></a>
         </section>
 
     </header>
-
+    
     <main>
+
         <section id="hero-section">
-            <h1>Full Self-Driving (Supervised)</h1>
-            <p>One-Time Purchase Ends Feb 14</p>
-            <button>Order Now</button>
-            <button>Learn More</button>
+
+         <div class="hero-text">
+             <h1>Full Self-Driving (Supervised)</h1>
+             <p>One-Time Purchase Ends Feb 14</p>
+            <i class="fa-solid fa-chevron-left arrow left-arrow"></i>
+            <i class="fa-solid fa-chevron-right arrow right-arrow"></i>
+            <div class="buttons">
+             <button id="blue-btn">Order Now</button>
+             <button id="white-btn">Learn More</button>
+         </div>
+        </div>
+
+        <div class="slider-dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
         </section>
 
         <section id="Model-Section">
             <div class="Model-Y">
                 <h5>Midsize SUV</h5>
                 <h3>Model Y</h3>
-                <button>Order Now</button>
-                <button>Learn More</button>
+                <div class="buttons"></div>
+                <button class="order-btn">Order Now</button>
+                <button class="learn-btn">Learn More</button>
             </div>
 
             <div class="Model-3">
                 <h5>Sport Sedan</h5>
                 <h3>Model 3</h3>
-                <button>Order Now</button>
-                <button>Learn More</button>
+                <div class="buttons"></div>
+                <button class="order-btn">Order Now</button>
+                <button class="learn-btn">Learn More</button>
             </div>
 
             <div class="Cybertruck">
                 <h5>Utilitytruck</h5>
                 <h3>Cybertruck</h3>
-                <button>Order Now</button>
-                <button>Learn More</button>
+                <div class="buttons"></div>
+                <button class="order-btn">Order Now</button>
+                <button class="learn-btn">Learn More</button>
             </div>
 
             <div class="Model-X">
                 <h5>Luxury SUV</h5>
                 <h3>Model X</h3>
-                <button>Order Now</button>
-                <button>Learn More</button>
+                <div class="buttons"></div>
+                <button class="order-btn">Order Now</button>
+                <button class="learn-btn">Learn More</button>
             </div>
             
             <div class="Model-S">
                 <h5>Luxury Sedan</h5>
                 <h3>Model S</h3>
-                <button>Order Now</button>
-                <button>Learn More</button>
+                <div class="buttons"></div>
+                <button class="order-btn">Order Now</button>
+                <button class="learn-btn">Learn More</button>
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+  
+  <div class="footer-links">
+    <a href="https://www.tesla.com/about">Tesla © 2026</a>
+    <a href="https://www.tesla.com/legal">Privacy & Legal</a>
+    <a href="https://service.tesla.com/en-US/vin-recall-search">Vehicle Recalls</a>
+    <a href="https://www.tesla.com/contact">Contact</a>
+    <a href="https://www.tesla.com/blog">News</a>
+    <a href="https://www.tesla.com/updates">Get Updates</a>
+    <a href="https://www.tesla.com/findus/list">Locations</a>
+    <a href="https://www.tesla.com/learn">Learn</a>
+  </div>
+
+</footer>
 
 </body>
 </html>

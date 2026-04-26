@@ -1,13 +1,293 @@
-#Model-Section{
-    display: flex;
-    gap: 18px;
+body{
+    font-family: "Open Sans",sans-serif;
 }
 
+
 #logo{
-    width: 90px;
+    width: 100px;
+    padding:1px;
+    margin:1px;
+    
 }
-#header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 30px;
+   padding: 10px 40px;
+}
+
+
+.help-icon {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.account-icon {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.outline-icon {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  font-size: 20px;
+}
+
+header i:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
+  background-color: rgb(243, 238, 238, 0.911)
+}
+
+i{
+    padding: 5px;
+}
+
+#hero-section {
+  background-image: url("./assets/3\ Tesla\ Model\ S.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start; 
+  align-items:center;
+
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+} 
+
+#hero-section{
+    position:relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+.arrow:hover {
+  background: rgba(255,255,255,0.15);
+  transform: translateY(-50%) scale(1.1);
+}
+
+#hero-section h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#hero-section p{
+    font-size: 18px;
+    font-weight: 200;
+}
+
+button {
+    font-family: "Open Sans",sans-serif;
+    border: none;
+    background: none;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding:10px 10px;
+    
+}
+
+.buttons button{
+    transition: all 0.3s ease;
+    padding: 10px 10px;
+
+}
+
+button:hover{
+    transform:scale(1.08);
+    background-color: rgba(243, 238, 238, 0.911);
+}
+
+#blue-btn{
+    color: #FFFFFF;
+    font-family: sans-serif;
+    background-color: #3E6AE1;
+    margin: 2px;
+    padding: 12px 12px;
+    width: 16vw;
+    border-radius: 5px;
+    
+}
+
+#white-btn {
+    color:#171A20;
+    font-family:sans-serif;
+    background-color: #F0F0F0;
+    margin:2px;
+    padding: 12px 12px;
+    width: 16vw;
+    border-radius: 5px;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 8px;
+}
+
+.slider-dots span {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#Model-Section{
+  display: flex;
+  gap: 20px;
+
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 30px;
+  
+  scroll-snap-type: x mandatory;
+
+}
+
+#Model-Section > div {
+  min-width: 350px;
+  height: 80vh;
+
+  flex-shrink: 0;
+  border-radius: 10px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 20px;
+  color: white;
+
+  scroll-snap-align: center;
+}
+
+#Model-Section > div {
+  position: relative;
+  overflow: hidden;
+}
+
+#Model-Section > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+
+.order-btn {
+  background-color: #3E6AE1;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 140px;
+}
+
+.learn-btn {
+  background-color: #F0F0F0;
+  color: #171A20;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 140px;
+}
+
+.order-btn:hover,
+.learn-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  transition: 0.3s ease;
+}
+
+.Model-Y {
+  background-image: url("./assets/tesla-model-y-facelift-2025-12.jpg.webp");
+}
+
+.Model-3 {
+  background-image: url("./assets/Tesla Model 3 Performance 2024.webp");
+}
+
+.Cybertruck {
+  background-image: url("./assets/cybertruck.avif");
+}
+
+.Model-X {
+  background-image: url("./assets/2026_tesla_model-x.avif");
+}
+
+.Model-S {
+  background-image: url("./assets/2025-tesla-model-s-1-672d42e172407.avif");
+}
+
+.footer {
+  background-color: #f5f5f5;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #5c5e62;
+  font-size: 13px;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #000;
+  text-decoration: underline;
 }
