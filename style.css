@@ -42,7 +42,8 @@ header{
 header i:hover {
   transform: scale(1.15);
   opacity: 0.8;
-  background-color: rgb(243, 238, 238, 0.911)
+  background-color: rgb(243, 238, 238, 0.9);
+  border-radius: 50%;
 }
 
 i{
@@ -65,11 +66,9 @@ i{
   text-align: center;
   color: white;
   font-family: "Open Sans", sans-serif;
-} 
 
-#hero-section{
-    position:relative;
-}
+  position:relative;
+} 
 
 .arrow {
   position: absolute;
@@ -161,61 +160,6 @@ button:hover{
   gap: 8px;
 }
 
-.slider-dots span {
-  width: 8px;
-  height: 8px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-#Model-Section{
-  display: flex;
-  gap: 20px;
-
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 30px;
-  
-  scroll-snap-type: x mandatory;
-
-}
-
-#Model-Section > div {
-  min-width: 350px;
-  height: 80vh;
-
-  flex-shrink: 0;
-  border-radius: 10px;
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
-  padding: 20px;
-  color: white;
-
-  scroll-snap-align: center;
-}
-
-#Model-Section > div {
-  position: relative;
-  overflow: hidden;
-}
-
-#Model-Section > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 25px;
-  color: white;
-}
-
 .buttons {
   display: flex;
   flex-direction: row;
@@ -266,6 +210,50 @@ button:hover{
   background-image: url("./assets/2025-tesla-model-s-1-672d42e172407.avif");
 }
 
+#model-section {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+#model-section > div {
+  min-width: 300px;
+  height: 400px;
+  flex-shrink: 0;
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.slider-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
 .footer {
   background-color: #f5f5f5;
   padding: 30px 20px;
@@ -291,3 +279,4 @@ button:hover{
   color: #000;
   text-decoration: underline;
 }
+
